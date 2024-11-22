@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-![alt text](https://github.com/thisisdhika/hyperhire-assessment/blob/main/performance.jpg?raw=true)
+![performance](https://github.com/thisisdhika/hyperhire-assessment/blob/main/performance.png?raw=true)
 
 ## Getting Started
 
