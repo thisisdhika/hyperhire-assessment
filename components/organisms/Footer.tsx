@@ -7,8 +7,8 @@ import Typography from '@/components/atoms/Typography';
 const Footer: React.FC = () => (
   <footer className="bg-secondaryBackground py-16">
     <div className="container">
-      <div className="grid grid-cols-1 lg:grid-cols-6 gap-8 items-start">
-        <div className="col-span-2 text-secondaryText">
+      <div className="grid grid-cols-1 md:grid-cols-6 gap-8 items-start">
+        <div className="md:col-span-2 text-secondaryText">
           <Image src="/images/logo-colorful.svg" alt="Hyperhire" width={185} height={35} className="mb-4" />
           <Typography className="text-lg font-semibold text-primaryText max-w-[25ch] mb-4">
             우리는 국가의 장벽을 넘어 최고의 인재를 매칭해드립니다.
@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
           <Typography className="font-bold">aaaaa@naver.com</Typography>
         </div>
 
-        <div className="grid grid-cols-4 col-span-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 md:col-span-4 gap-4">
           <Card
             icon={<Icon size={26} name="code" className="text-[#7A8FAD]" />}
             title="해외 개발자 원격 채용"
@@ -59,7 +59,7 @@ const Footer: React.FC = () => (
           <Typography className="mt-0.5">427-86-01187</Typography>
           <Typography className="mt-0.5 break-words">U74110DL2016PTC290812</Typography>
         </div>
-        <div className="font-semibold text-secondaryText col-span-3">
+        <div className="font-semibold text-secondaryText md:col-span-3">
           <Typography className="text-primaryText">주소 ADDRESS</Typography>
           <Typography className="mt-0.5">서울특별시 강남대로 479, 지하 1층 238호 </Typography>
           <Typography className="mt-0.5">

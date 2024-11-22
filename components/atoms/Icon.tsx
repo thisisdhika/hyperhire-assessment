@@ -19,7 +19,7 @@ const iconList = {
   'square-arrow-right': () => import('@/assets/icons/square-arrow-right.svg'),
 };
 
-export type Icons = keyof typeof iconList
+export type Icons = keyof typeof iconList;
 export type IconProps = {
   name: Icons;
   size?: number;
@@ -44,7 +44,7 @@ const Icon: React.FC<IconProps> = ({ name, size = 24, className }) => {
   }, [name]);
 
   if (!IconComponent) {
-    return null;
+    return <div style={{ width: size, height: size }} />;
   }
 
   return <IconComponent width={size} height={size} className={className} aria-hidden="true" />;

@@ -47,8 +47,8 @@ const ProfileSlider = () => {
     const isNext = index === (currentIndex + 1) % profiles.length;
 
     let translateClass = 'translate-x-0 scale-100 opacity-100 z-10';
-    if (isPrev) translateClass = '-translate-x-[30%] scale-90 opacity-50 z-0';
-    if (isNext) translateClass = 'translate-x-[30%] scale-90 opacity-50 z-0';
+    if (isPrev) translateClass = '-translate-x-[15%] md:-translate-x-[30%] scale-90 opacity-50 z-0';
+    if (isNext) translateClass = 'translate-x-[15%] md:translate-x-[30%] scale-90 opacity-50 z-0';
 
     return (
       <div
@@ -71,26 +71,11 @@ const ProfileSlider = () => {
           </p>
         </div>
         <div className="flex flex-wrap justify-center gap-1 mt-4">
-          {profile.skills.map(
-            (
-              skill:
-                | string
-                | number
-                | bigint
-                | boolean
-                | React.ReactElement<any, string | React.JSXElementConstructor<any>>
-                | Iterable<React.ReactNode>
-                | React.ReactPortal
-                | Promise<React.AwaitedReactNode>
-                | null
-                | undefined,
-              idx: React.Key | null | undefined,
-            ) => (
-              <span key={idx} className="text-secondaryText px-3 py-1 rounded-lg border">
-                {skill}
-              </span>
-            ),
-          )}
+          {profile.skills.map((skill: (typeof profiles)[0]['skills'][0], idx: React.Key | null | undefined) => (
+            <span key={idx} className="text-secondaryText px-3 py-1 rounded-lg border">
+              {skill}
+            </span>
+          ))}
         </div>
       </div>
     );
